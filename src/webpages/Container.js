@@ -8,10 +8,12 @@ function Aim() {
         </div>
         <div class="desc1">
             <p class="desc">To SImulate Hamming Code </p>
-        </div>
+        </div> 
     </div>)
 }
 function Theory() {
+
+    
     return (
         <div class="box" id="theory">
             <div class="title">
