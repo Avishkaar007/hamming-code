@@ -13,6 +13,8 @@ function Aim() {
     </div>)
 }
 function Theory() {
+
+    
     return (
         <div className="box" id="theory">
             <div className="title">
