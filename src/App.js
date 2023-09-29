@@ -1,12 +1,11 @@
 
-import Header from "./webpages/Header.js";
-import Nav from "./webpages/Nav.js";
-import Container from "./webpages/Container.js";
+import Header from "./Components/Header.js"
+import Nav from "./Components/Nav.js";
+import React from 'react';
+import Container from "./Components/Container.js";
 import "./App.css";
-import "./webpages/spline.js";
-import Simulation from "./webpages/simulation.jsx";
 function App(){
-
+  
   return(
     <>
     <Header />
