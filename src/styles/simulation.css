@@ -1,0 +1,65 @@
+#bit-count{
+    width:100%;
+    border-radius: 15px;
+    border-color: black;
+    justify-content: center;
+    height:100px;
+}
+
+
+.bit{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(5, 95, 95);
+    color: aliceblue;
+}
+.inputText{
+    height: 50px;
+    padding:0 10px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 5px;
+    width: 100%;
+    
+    
+}
+input[value="Go"]:hover{
+    background-color: rgb(46, 46, 114);
+    color: aliceblue;
+    font-size: 1rem;
+}
+.nobr{
+    white-space: nowrap;
+}
+
+#simulation-box{
+    margin-bottom: 100px;
+}
+
+/* .control-container{
+    width:40%;
+    float: right;
+    background-color: rgb(201, 198, 198);
+    padding: 2rem;
+    border-radius: 1rem;
+    border: solid 2px gray;
+}
+.simulation-area{
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.main-area{
+    margin:50px;
+}
+.simulation{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.line{
+    width: 100%;
+} */
