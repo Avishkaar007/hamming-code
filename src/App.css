@@ -15,6 +15,7 @@
 }
 
 body {
+
   background-color: rgba(238, 234, 234, 0.603);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   overflow-x: hidden;
@@ -336,13 +337,15 @@ nav .boxq a img {
   font-weight: bold;
 }
 
+
+
 .icon {
   border-radius: 50%;
   height: 45px;
   width: 45px;
 }
 
-.container>.box {
+.myContainer>.box {
   border: 1.5px rgba(0, 12, 12, 0.383) solid;
   border-radius: 0.5rem;
   font-size: 1rem;
@@ -354,14 +357,14 @@ nav .boxq a img {
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
 
-.exp .container .box .title {
+.exp .myContainer .box .title {
   line-height: 1.8;
   margin-top: 5%;
   margin-left: 5%;
   font-weight: bold;
 }
 
-.container .box .desc {
+.myContainer .box .desc {
   line-height: 1.8;
   text-decoration: none;
   justify-content: center;
@@ -372,24 +375,26 @@ nav .boxq a img {
   margin-left: 4%;
   margin-bottom: 2%;
 }
+
 .obs {
   font-size: 1.2rem;
-  color:rgb(108, 35, 204);
+  color: rgb(108, 35, 204);
 }
 
-.yt-player{
+.yt-player {
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
   margin-bottom: 2rem;
 }
-.yt-player iframe{
+
+.yt-player iframe {
   min-width: 300px;
-  border-radius:10px;
-  width:70%;
+  border-radius: 10px;
+  width: 70%;
   min-height: 300px;
   max-height: 500px;
-  margin:auto 4rem;
+  margin: auto 4rem;
 }
 
 @media screen and (max-width:800px) {
@@ -412,7 +417,7 @@ nav .boxq a img {
     width: 70vw;
   }
 
-  .container>.box {
+  .myContainer>.box {
     font-size: 0.7rem;
   }
 
@@ -424,7 +429,7 @@ nav .boxq a img {
     font-size: 0.8rem;
   }
 
- 
+
 
   .methods {
     font-size: 0.6rem;
@@ -519,7 +524,7 @@ iframe {
   height: 700px;
 }
 
-.container,
+.myContainer,
 iframe>html {
   overflow-y: hidden;
 }
@@ -548,8 +553,13 @@ iframe>html {
 
 body {
   background-color: rgba(238, 234, 234, 0.603);
+
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+
+
+
 
 header {
   height: 14vh;
@@ -732,20 +742,22 @@ nav .boxq a img {
   margin-bottom: 2px;
 }
 
-.footer{
+.footer {
   width: 100%;
-  
+
 }
+
 .exp-heading {
   text-align: center;
   font-size: 1.2rem;
 }
 
-.exp-heading h1{
+.exp-heading h1 {
   margin-bottom: -4rem;
   font-size: 2rem;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 .icon {
   border-radius: 50%;
   height: 45px;
@@ -774,7 +786,8 @@ nav .boxq a img {
 
 }
 
-.container>.box {
+.myContainer .box {
+  
   border: 1.5px rgba(0, 12, 12, 0.383) solid;
   border-radius: 0.5rem;
   font-size: 1rem;
@@ -786,13 +799,13 @@ nav .boxq a img {
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
 
-.exp .container .box .title {
+.exp .myContainer .box .title {
   margin-top: 10px;
   margin-left: 5%;
   font-weight: bold;
 }
 
-.container .box .desc {
+.myContainer .box .desc {
   line-height: 1.8;
   text-decoration: none;
   justify-content: center;
@@ -808,9 +821,10 @@ nav .boxq a img {
 .text-1 {
   font-weight: normal;
   font-size: 1.4rem;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.text-2{
+
+.text-2 {
   font-size: 1.1rem;
 }
 
@@ -848,7 +862,7 @@ nav .boxq a img {
     margin-left: 30px;
   }
 
-  .container>.box {
+  .myContainer>.box {
     font-size: 0.7rem;
   }
 
@@ -871,3 +885,14 @@ nav .boxq a img {
     border: 2px solid black;
   }
 }
+
+.myContainer{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+.myContainer .box{
+  width:90%;
+}
+
