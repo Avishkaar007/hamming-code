@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ;
 
 
@@ -7,15 +6,11 @@
 }
 
 #practise {
-=======
-#practise{
->>>>>>> 3b82b718bd7f0b71fc4f5957f05283d16f1bf258
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-<<<<<<< HEAD
 
 .container {
 
@@ -44,15 +39,11 @@
 }
 
 #goFullScreen {
-=======
-#goFullScreen{
->>>>>>> 3b82b718bd7f0b71fc4f5957f05283d16f1bf258
     position: relative;
     float: right;
     width: 50px;
     height: 50px;
     font-size: xx-large;
-<<<<<<< HEAD
     border: solid 0.1px grey;
     border-radius: 10px;
 }
@@ -101,25 +92,4 @@ transition: 0.2s;
 
 #goTop:hover{
     scale:1.1;
-=======
-    border: solid 0.1px grey ;
-    border-radius: 10px;
-}
-
-.line{
-    width: 100%;
-}
-#simulateButton{
-    width:300px;
-    height: 100px;
-    border-radius: 10px;
-    border : solid 1px gray;
-    font-size: 32px;
-    font-family:Arial, Helvetica, sans-serif;
-    position: relative;
-}
-#simulateButton:hover{
-    background-color: rgb(0, 0, 156);
-    color: aliceblue;
->>>>>>> 3b82b718bd7f0b71fc4f5957f05283d16f1bf258
 }

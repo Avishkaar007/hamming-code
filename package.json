@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "hammingcode",
   "private": true,
   "version": "0.0.0",
@@ -30,48 +29,6 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "postcss": "^8.4.38",
-    "tailwindcss": "^3.4.3",
     "vite": "^4.4.5"
-=======
-  "name": "hamming-code",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "https://avishkaar007.github.io/Projects/vlab/hamming-code",
-  "dependencies": {
-    "@splinetool/react-spline": "^2.2.6",
-    "@splinetool/runtime": "^0.9.425",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "gh-pages": "^5.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-full-screen": "^1.1.1",
-    "react-scripts": "5.0.1",
-    "styled-jsx": "^5.1.2",
-    "three": "^0.155.0",
-    "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
->>>>>>> 3b82b718bd7f0b71fc4f5957f05283d16f1bf258
   }
 }
