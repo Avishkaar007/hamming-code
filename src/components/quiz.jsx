@@ -84,7 +84,7 @@ const QuizX = () => {
         </div>
         <div className="grid grid-cols-2 w-full">
           {question.answers.map((answer, index) => (
-            <div key={index} className="text-center grid ">
+            <div key={index} className="text-center grid mx-1">
               <button className="md:w-full bg-gray-300 border-2 my-4 p-6 mt-4 rounded-xl mx-2 hover:bg-blue-500" onClick={() => handleAnswerButtonClick(answer.isCorrect)}>
                 {answer.text}
               </button>

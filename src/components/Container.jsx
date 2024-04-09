@@ -10,6 +10,13 @@ import Footer from "./Footer";
 import Encoder from "../routes/Encoder";
 import Home, { Resources } from "../routes/Learn";
 import QuizX from "./quiz";
+import './Simulation.css';
+import React, { useState,useEffect } from 'react';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+
+
+
 function Aim() {
     return (<div className="box" id="aim">
         <div className="title">
@@ -159,10 +166,10 @@ function Practice() {
 }
 
 
-import './Simulation.css';
-import React, { useState } from 'react';
-import SyntaxHighlighter from 'react-syntax-highlighter';
-import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+
+
+
+
 
 function Code() {
     const [currentLanguage, setCurrentLanguage] = useState('python');
@@ -246,7 +253,7 @@ print("Decoded Data:", decoded_data)
 
     `,
         Java: `
-        import java.util.Arrays;
+import java.util.Arrays;
 
 public class HammingCode {
     
@@ -470,51 +477,51 @@ public class HammingCode {
 
     return (
         <>
-            <div className="container">
-                <div className="box" id="code">
-                    <div className="title">
-                        <h2 className="heading font-Robo text-xl md:text-3xl text-center py-2">Code</h2>
+
+            <div className="box" id="code">
+                <div className="title">
+                    <h2 className="heading font-Robo text-xl md:text-3xl text-center py-2">Code</h2>
+                </div>
+                <div className="desc1">
+                    <div className="code_header">
+                        <button
+                            className={`bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-lg mx-1 ${currentLanguage === 'python' ? 'active' : ''}`}
+                            onClick={() => setCurrentLanguage('python')}
+                        >
+                            Python
+                        </button>
+                        <button
+                            className={`bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-lg mx-1 ${currentLanguage === 'java' ? 'active' : ''}`}
+                            onClick={() => setCurrentLanguage('Java')}
+                        >
+                            Java
+                        </button>
+                        <button
+                            className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-lg mx-1"
+                            // style={{ backgroundColor: 'Black', color: 'white', marginBottom: '-20px' }}
+                            onClick={() => setCurrentLanguage('C++')}
+                        >
+                            C++
+                        </button>
+                        <button className=" bg-gray-300 hover:bg-gray-800 hover:text-white text-black font-bold py-1 px-2 rounded-sm float-right mt-2" onClick={handleCopy} >
+                            {copied ? 'Copied!' : 'Copy Code'}
+                        </button>
+
                     </div>
-                    <div className="desc1">
-                        <div className="code_header">
-                            <button
-                                className={`bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-lg mx-1 ${currentLanguage === 'python' ? 'active' : ''}`}
-                                onClick={() => setCurrentLanguage('python')}
-                            >
-                                Python
-                            </button>
-                            <button
-                                className={`bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-lg mx-1 ${currentLanguage === 'java' ? 'active' : ''}`}
-                                onClick={() => setCurrentLanguage('Java')}
-                            >
-                                Java
-                            </button>
-                            <button
-                                className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-lg mx-1"
-                                // style={{ backgroundColor: 'Black', color: 'white', marginBottom: '-20px' }}
-                                onClick={() => setCurrentLanguage('C++')}
-                            >
-                                C++
-                            </button>
-                            <button className=" bg-gray-300 hover:bg-gray-800 hover:text-white text-black font-bold py-1 px-2 rounded-sm float-right mt-2" onClick={handleCopy} >
-                                {copied ? 'Copied!' : 'Copy Code'}
-                            </button>
+                    <div className="max-w-2x1 min-w-[25rem]  rounded-md overflow-hidden">
 
-                        </div>
-                        <div className="max-w-2x1 min-w-[25rem]  rounded-md overflow-hidden">
-
-                            <div className="grid place-items-center rounded-lg p-4 bg-slate-950">
-                                <p className="text-xl text-white ">
-                                    {currentLanguage}
-                                </p>
-                                <SyntaxHighlighter language="jsx" style={atomOneDark} className="atom scale rounded-lg w-full " customStyle={{ padding: '20px', paddingTop: '6px' }}>
-                                    {codeString[currentLanguage]}
-                                </SyntaxHighlighter>
-                            </div>
+                        <div className="grid place-items-center rounded-lg p-4 bg-slate-950">
+                            <p className="text-xl text-white ">
+                                {currentLanguage}
+                            </p>
+                            <SyntaxHighlighter language="jsx" style={atomOneDark} className="atom scale rounded-lg w-full " customStyle={{ padding: '20px', paddingTop: '6px' }}>
+                                {codeString[currentLanguage]}
+                            </SyntaxHighlighter>
                         </div>
                     </div>
                 </div>
             </div>
+
         </>
     );
 
@@ -568,8 +575,8 @@ function Header() {
     const size = isLargerThan600 ? 'md' : 'xs';
     return (
         <>
-            <header className="flex justify-center "> 
-                <div>   
+            <header className="flex justify-center ">
+                <div>
                     <img class="logo" src="../../public/images/logo.png" />
                     <h1>V-Lab @ ANDC</h1>
                 </div>
@@ -586,7 +593,38 @@ function Header() {
         </>
     );
 }
+
+
+
+
 function Container() {
+    const [showButton, setShowButton] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.pageYOffset > 100) {
+                setShowButton(true);
+            } else {
+                setShowButton(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+
+
+
     return (<ChakraProvider theme={theme}>
         <div className="container">
 
@@ -603,9 +641,12 @@ function Container() {
             <Quiz />
             <Result />
             <Footer />
+            <div id="goTop" style={{ display: showButton ? 'block' : 'none' }} onClick={scrollToTop}>↑</div>
         </div>
     </ChakraProvider>
 
     )
 }
+
+
 export default Container;

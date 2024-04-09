@@ -106,9 +106,24 @@ nav .boxq a img {
     position: sticky !important;
     top: 0;
   }
+  
+  .css-xji34{
+    translate: -2rem;
+  }
 
+  #goFullScreen{
+    visibility: hidden;
+  }
   .quiz-box{
     margin: 0 !important;
     padding: 0 !important;
+  }
+  .container-box{
+    width:100%;
+  }
+
+  #code{
+    padding: 0;
+    width:100%;
   }
 }

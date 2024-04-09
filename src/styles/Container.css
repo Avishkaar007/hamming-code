@@ -71,3 +71,25 @@
     font-weight: 800;
     font-size: xx-large;
 }
+
+#goTop {
+
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.25rem;
+    background-color: #003441;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    font-size: xx-large;
+    font-weight: 1000;
+transition: 0.2s;
+
+}
+
+#goTop:hover{
+    scale:1.1;
+}
