@@ -5,8 +5,11 @@
     justify-content: center;
     height:100px;
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 3b82b718bd7f0b71fc4f5957f05283d16f1bf258
 .bit{
     width: 50px;
     height: 50px;
@@ -32,11 +35,15 @@ input[value="Go"]:hover{
     white-space: nowrap;
 }
 
+<<<<<<< HEAD
 #simulation-box{
     margin-bottom: 100px;
 }
 
 /* .control-container{
+=======
+.control-container{
+>>>>>>> 3b82b718bd7f0b71fc4f5957f05283d16f1bf258
     width:40%;
     float: right;
     background-color: rgb(201, 198, 198);
@@ -45,6 +52,10 @@ input[value="Go"]:hover{
     border: solid 2px gray;
 }
 .simulation-area{
+<<<<<<< HEAD
+=======
+    /* float: left; */
+>>>>>>> 3b82b718bd7f0b71fc4f5957f05283d16f1bf258
     width: 100%;
     margin-bottom: 80px;
 }
@@ -53,14 +64,28 @@ input[value="Go"]:hover{
     margin:50px;
 }
 .simulation{
+<<<<<<< HEAD
+=======
+    height: 50vh;
+    /* width: 55%; */
+    
+>>>>>>> 3b82b718bd7f0b71fc4f5957f05283d16f1bf258
     float: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+<<<<<<< HEAD
 
 .line{
     width: 100%;
 } */
 
+=======
+/* 
+ */
+.line{
+    width: 100%;
+}
+>>>>>>> 3b82b718bd7f0b71fc4f5957f05283d16f1bf258
