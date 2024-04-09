@@ -140,7 +140,7 @@ function Practice() {
     }
     return (
 
-        <ChakraBaseProvider theme={theme} bg={bg} color={color}>
+        <ChakraBaseProvider  theme={theme} bg={bg} color={color}>
             <Box bg={bg}>
                 <div className="box" id="practice">
                     <div className="title">
@@ -578,13 +578,13 @@ function Header() {
         <>
             <header className="flex justify-center ">
                 <div>
-                    <img class="logo" src="../../public/images/logo.png" />
+                    <img class="logo" src="/images/logo.png" />
                     <h1>V-Lab @ ANDC</h1>
                 </div>
                 <ul class="navigation">
                     <li><a href="https://www.vlab.andcollege.du.ac.in/index.html">Home</a></li>
-                    <li><a href="https://www.vlab.andcollege.du.ac.in/index.html#labs_section">Labs</a></li>
-                    <li><a href="https://www.vlab.andcollege.du.ac.in/index.html#team">Team</a></li>
+                    <li><a href="https://www.vlab.andcollege.du.ac.in/csSc/comp.html">Labs</a></li>
+                    <li><a href="./team.html">Team</a></li>
                     <li><a href="https://www.andcollege.du.ac.in/" target="_blank" rel="noopener noreferrer">College Website</a>
                     </li>
                 </ul>
@@ -627,7 +627,7 @@ function Container() {
 
 
     return (<ChakraProvider theme={theme}>
-        <div className="container">
+        <div className="myContainer">
 
             <Header />
             <div class="exp-heading">
