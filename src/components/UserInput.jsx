@@ -48,10 +48,10 @@ const UserInput = ({ onSubmit, isLoading, minLength = 4 }) => {
       <HStack mb="2">
         {isLargerThan900 ? (
           <Button
-            px="6"
+            px="8"
             size="md"
             colorScheme="blue"
-            leftIcon={<FaRandom />}
+                        leftIcon={<FaRandom />}
             onClick={handleRandomButtonClick}
           >
             Generate Random Bits

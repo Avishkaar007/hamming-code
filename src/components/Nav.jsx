@@ -1,10 +1,10 @@
 
 import '../styles/Nav.css';
 
-function Nav() {    
+function Nav() {
   return (
-    <div className="Nav">
-      <nav>
+    <div className="Nav md:sticky"> 
+      <nav className='sticky' id="stickyElement">
         <div className="boxq">
             <a className="internal_link" href="#aim">
                 <img className="icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBmpbB3jSjMF-FDgIL1E-eRN6eeCDLSsvoAQ&amp;usqp=CAU"/><br/>

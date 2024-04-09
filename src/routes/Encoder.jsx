@@ -53,7 +53,7 @@ const Encoder = props => {
 
         <Box as="section" px="2" mb="3">
           <Heading size="md" mb="2">
-            Data Bits
+            Original Data Bits
           </Heading>
 
           <Box d="flex" flexWrap="wrap">
@@ -71,6 +71,7 @@ const Encoder = props => {
               );
             })}
           </Box>
+          <p>See the extreme right data bit here is D3 then D5 followed by D6 and so on. </p>
         </Box>
 
         <HammingCodeBits

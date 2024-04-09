@@ -15,84 +15,79 @@ const Home = props => {
   return (
     <Box height="100%">
       <Container maxW="container.xl">
-        <Article>
-          <Heading as="h1" mb="1" size="md">
-            What is {APP_NAME}
-          </Heading>
-          <Text as="p" mb="2">
-            {APP_NAME} is a hamming code encoder and decoder. It can encode data
-            bits to hamming code. It also decodes hamming code and check for
-            single bit errors.
-          </Text>
-
-          <Heading as="h1" size="md" mb="1">
-          
-            Features
-          </Heading>
-          <UnorderedList px="3">
-            <ListItem>Encodes Data Bits</ListItem>
-            {/* <ListItem>Decodes Hamming Code</ListItem> */}
-            <ListItem>Detect Single Bit Error</ListItem>
-          </UnorderedList>
-        </Article>
 
         <Article>
           <Heading as="h1" mb="1" size="md">
             What is hamming code?
           </Heading>
           <Text as="p" mb="2">
-            Computers represent data digitally as 1s and 0s, called 'bits'.
-            Sometimes these bits are mistakenly swapped, for example: a
-            scratched CD or a message garbled in transit between computers.
-            Invented in 1950 by <mark>Richard Hamming</mark>, Hamming Code can
-            correct 1-bit errors and detect 2-bit errors, making data transfer
-            and saving more robust.
+            Hamming code is a set of error-correction codes that can be used to detect and correct the errors that can occur when the data is moved or stored from the sender to the receiver. It is a technique developed by R.W. Hamming for error correction. Redundant bits - Redundant bits are extra binary bits that are generated and added to the information-carrying bits of data transfer to ensure that no bits were lost during the data transfer. The number of redundant bits can be calculated using the following formula:
           </Text>
 
           <Text as="p" mb="2">
-            A <mark>parity bit</mark> is a single bit that tracks whether the
+            A parity bit is a single bit that tracks whether the
             number of 1's is odd or even. If the number of 1's is odd, the
             parity bit is 1; if the number of 1's is even, the parity bit is 0.
             Hamming cleverly arranged each parity bit to track different halves
             of the data, so that we can correct 1-bit errors and, with an extra
             step, detect 2-bit errors.
           </Text>
-          <Heading as="h1" size="md" mb="1">
+          <Text as="p" mb={2} px={6}>
+
+          </Text>
+          <Heading as="h1" size="md" mb="4" mt="6">
 
             How to arrange parity bits?
           </Heading>
-          <Text as="p" mb="2">
-            In everyday base-10 counting, powers-of-10 (1, 10, 100, etc...) are
-            written with 0s and a single 1. Similarly, in binary, powers-of-2
-            (1, 2, 4, 8, 16, etc...) are written with 0s and a single 1 (0001,
-            0010, 0100, 1000, etc...). In a message, the bits in a powers-of-2
-            position will be our parity bits. These parity bits track the parity
-            of the other bits in the message whose position have a 1 in the same
-            place. If one of bits is flipped, the parity will be wrong. If you
-            select a data length that makes a square, you can visually see that
-            each parity bit tracks certain rows and columns, splitting the
-            message in halves to efficiently locate where the error is, like a
-            game of "20 questions" or like a binary search. After calculating
-            what the parity bits should equal, the parity bits point to the
-            location of the error!
+          <Text as="p" mb="2" px={6}>
+            <ol>
+              <li>
+                <strong>Determine the Number of Parity Bits:</strong>
+                <ul style={{ listStyle: 'none' }}>
+                  <li>Calculate (2^r &gt;= m + r + 1 ) for the given message length.</li>
+                  <li>Choose the smallest \(r\) that satisfies the inequality.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Position Parity Bits:</strong>
+                <ul style={{ listStyle: 'none' }}>
+                  <li>Reserve positions at powers of 2 for parity bits (1, 2, 4, 8, ...).</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Assign Data Bits:</strong>
+                <ul style={{ listStyle: 'none' }}>
+                  <li>Place data bits in the remaining positions, skipping parity bit positions.</li>
+                  <li>Assign sequential numbers to the remaining positions.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Calculate Parity Bits:</strong>
+                <ul style={{ listStyle: 'none' }}>
+                  <li>For each parity bit position, calculate the XOR of the covered bits (including itself).</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Insert Parity Bits:</strong>
+                <ul style={{ listStyle: 'none' }}>
+                  <li>Insert the calculated parity bits into their designated positions.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Final Codeword:</strong>
+                <ul style={{ listStyle: 'none' }}>
+                  <li>The resulting arrangement of data and parity bits is the final codeword.</li>
+                </ul>
+              </li>
+            </ol>
+
           </Text>
         </Article>
 
         <Article>
-          <Heading as="h1" size="md" mb="1">
-
-            Efficiency and Limitations</Heading>
-          <Text as="p" mb="2">
-            Of course, by having some parity bits, not all bits can be used to
-            transmit data. In this case, we need 05 parity bits to track 12 bits
-            of data for an overall efficiency of 70.59%. Longer messages loosely
-            correlate with higher efficiency. The longer the message, however,
-            the more likely the chance of bit errors, rendering Hamming Code
-            insufficient, since it cannot detect 3 or more errors.
-          </Text>
 
           <Heading as="h1" size="md" mb="1">
-            From Wikiepdia:
+            In a Nutshell:
           </Heading>
           <Text as="i" mb="2">
             "If the decoder does not attempt to correct errors, it can reliably
@@ -111,45 +106,68 @@ const Home = props => {
   );
 };
 
-export function Resources (){
-  return(
+export function Resources() {
+  return (
     <Article>
-          <Heading as="h1" size="md" mb="1">
-            Resources
-          </Heading>
+      <Heading as="h1" size="lg" fontWeight={1000} mt="1"  mb="1">
+        Resources
+      </Heading>
+      <Text>
+        Heyming Simulator:{' A great thanks to the owner of this public software. '}
+        <Link
+          color="blue.500"
+          target="_blank"
+          href="https://github.com/i-naeem/heyming"
+        >
+          Heyming Simulator
+        </Link>
+      </Text>
+      <Text as="p">
+        Read more about Hamming Code:{' '}
+        <Link
+          color="blue.500"
+          target="_blank"
+          href="https://en.wikipedia.org/wiki/Hamming_code"
+        >
+          https://en.wikipedia.org/wiki/Hamming_code
+        </Link>
+      </Text>
+      <Text as="p">
+        Read more about error-correcting code:{' '}
+        <Link
+          color="blue.500"
+          target="_blank"
+          href="https://en.wikipedia.org/wiki/Linear_code"
+        >
+          https://en.wikipedia.org/wiki/Linear_code
+        </Link>
+      </Text>
+      <Text>
+        Learn hamming code from a video:{' '}
+        <Link
+          color="blue.500"
+          target="_blank"
+          href="https://www.3blue1brown.com/lessons/hamming-codes"
+        >
+          3Blue1Brown Hamming Code Explanation
+        </Link>
+      </Text>
 
-          <Text as="p">
-            Read more about Hamming Code:{' '}
-            <Link
-              color="blue.500"
-              target="_blank"
-              href="https://en.wikipedia.org/wiki/Hamming_code"
-            >
-              https://en.wikipedia.org/wiki/Hamming_code
-            </Link>
-          </Text>
-          <Text as="p">
-            Read more about error-correcting code:{' '}
-            <Link
-              color="blue.500"
-              target="_blank"
-              href="https://en.wikipedia.org/wiki/Linear_code"
-            >
-              https://en.wikipedia.org/wiki/Linear_code
-            </Link>
-          </Text>
-          <Text>
-            Learn hamming code from a video:{' '}
-            <Link
-              color="blue.500"
-              target="_blank"
-              href="https://www.3blue1brown.com/lessons/hamming-codes"
-            >
-              3Blue1Brown Hamming Code Explanation
-            </Link>
-          </Text>
-        </Article>
-      
+      <Text>
+        Pdf Explanation:{' '}
+        <Link
+          color="blue.500"
+          target="_blank"
+          href="https://courseware.cutm.ac.in/wp-content/uploads/2020/05/DCS_Hamming-CODE.pdf"
+        >
+          HARISH CHANDRA MOHANTA, CUTM, BHUBANESWAR CAMPUS
+        </Link>
+      </Text>
+
+
+
+    </Article>
+
   )
 }
 

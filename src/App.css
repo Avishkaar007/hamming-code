@@ -1,3 +1,8 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
 * {
   margin: 0;
   padding: 0%;
@@ -109,8 +114,6 @@ header .navigation li a {
   border-radius: 3px;
 }
 
-dth: 600px;
-}
 
 @media screen and (max-width: 1000px) {
   nav {
@@ -369,6 +372,25 @@ nav .boxq a img {
   margin-left: 4%;
   margin-bottom: 2%;
 }
+.obs {
+  font-size: 1.2rem;
+  color:rgb(108, 35, 204);
+}
+
+.yt-player{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.yt-player iframe{
+  min-width: 300px;
+  border-radius:10px;
+  width:70%;
+  min-height: 300px;
+  max-height: 500px;
+  margin:auto 4rem;
+}
 
 @media screen and (max-width:800px) {
   .exp-heading {
@@ -402,6 +424,8 @@ nav .boxq a img {
     font-size: 0.8rem;
   }
 
+ 
+
   .methods {
     font-size: 0.6rem;
   }
@@ -427,6 +451,7 @@ nav .boxq a img {
   border-radius: 0px 20px 0px 20px;
   margin-top: 20px;
 }
+
 
 .instruc,
 .detl,
@@ -707,14 +732,20 @@ nav .boxq a img {
   margin-bottom: 2px;
 }
 
+.footer{
+  width: 100%;
+  
+}
 .exp-heading {
   text-align: center;
   font-size: 1.2rem;
-  margin-top: 80px;
-  margin-bottom: 30px;
-  font-weight: bold;
 }
 
+.exp-heading h1{
+  margin-bottom: -4rem;
+  font-size: 2rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 .icon {
   border-radius: 50%;
   height: 45px;
@@ -771,6 +802,16 @@ nav .boxq a img {
   margin-top: 2%;
   margin-left: 4%;
   margin-bottom: 2%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-1 {
+  font-weight: normal;
+  font-size: 1.4rem;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.text-2{
+  font-size: 1.1rem;
 }
 
 .language-cpp {
