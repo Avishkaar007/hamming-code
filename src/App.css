@@ -259,7 +259,7 @@ header .navigation li a {
     cursor: pointer;
     background-color: #2196f3;
     color: white;
-<<<<<<< HEAD
+
   }
 
   .cont {
@@ -357,7 +357,7 @@ nav .boxq a img {
   margin: 5%;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
-<<<<<<< HEAD
+
 
 .exp .myContainer .box .title {
   line-height: 1.8;
@@ -371,7 +371,7 @@ nav .boxq a img {
   text-decoration: none;
   justify-content: center;
   display: flex;
-<<<<<<< HEAD
+
   font-weight: bold;
   flex-direction: column;
   margin-top: 2%;
@@ -439,7 +439,7 @@ nav .boxq a img {
   }
 }
 
-=======
+
   font-weight:500;
   flex-direction: column;
   margin-top: 2%;
@@ -480,16 +480,10 @@ nav .boxq a img {
 .tblDt {
   opacity: 0;
 }
-<<<<<<< HEAD
 
 .mth {
   background-color: rgb(0, 62, 62);
   width: 30%;
-=======
-.mth{
-  background-color: rgb(0, 62, 62);
-  width: 16%;
->>>>>>> 3b82b718bd7f0b71fc4f5957f05283d16f1bf258
   color: white;
   padding: 5px 10px;
   border-radius: 0px 20px 0px 20px;
@@ -501,7 +495,6 @@ nav .boxq a img {
 .instruc,
 .detl,
 .detl-1,
-.obs {
   text-align: center;
   margin: 1.5%;
 }
@@ -513,13 +506,6 @@ nav .boxq a img {
   margin: 1.5%;
 }
 .det{
->>>>>>> 3b82b718bd7f0b71fc4f5957f05283d16f1bf258
-  text-align: center;
-  font-size: 1.2rem;
-  margin-top: -1%;
-}
-<<<<<<< HEAD
-
 .detl {
   font-size: 1.2rem;
 }
