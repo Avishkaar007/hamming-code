@@ -34,7 +34,8 @@
 }
 
 .css-1vz2rsl {
-    width: 80%;
+    width: 100%;
+    
 
 }
 
@@ -92,4 +93,16 @@ transition: 0.2s;
 
 #goTop:hover{
     scale:1.1;
+}
+
+.lightBold{
+    font-weight: 600;
+}
+
+#team{
+    padding: 1rem;
+}
+
+#references{
+    padding: 1rem;
 }

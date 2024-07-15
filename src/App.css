@@ -440,13 +440,6 @@ nav .boxq a img {
 }
 
 
-  font-weight:500;
-  flex-direction: column;
-  margin-top: 2%;
-  margin-left: 4%; 
-  margin-bottom: 2%;
-  padding-left: 20px;
-}
 .language-cpp{
   height: auto;
   width: 80vw;
@@ -468,7 +461,6 @@ nav .boxq a img {
       width: 70vw;
   }
 }
->>>>>>> 3b82b718bd7f0b71fc4f5957f05283d16f1bf258
 .cont {
   display: flex;
 }
@@ -489,34 +481,33 @@ nav .boxq a img {
   border-radius: 0px 20px 0px 20px;
   margin-top: 20px;
 }
-<<<<<<< HEAD
 
 
 .instruc,
 .detl,
 .detl-1,
+.obs {
   text-align: center;
   margin: 1.5%;
 }
 
-.det {
-=======
+
 .instruc, .detl, .detl-1,.obs {
   text-align: center;
   margin: 1.5%;
 }
 .det{
+
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: -1%;
+}
+
 .detl {
   font-size: 1.2rem;
 }
 
 .nxt {
-=======
-.detl {
-  font-size: 1.2rem;
-}
-.nxt{
->>>>>>> 3b82b718bd7f0b71fc4f5957f05283d16f1bf258
   margin: 2% auto;
   justify-content: center;
   align-items: center;
@@ -528,10 +519,6 @@ nav .boxq a img {
   background-color: #2196f3;
   color: white;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 3b82b718bd7f0b71fc4f5957f05283d16f1bf258
 .cont {
   justify-content: center;
   align-items: center;
@@ -539,17 +526,10 @@ nav .boxq a img {
 
 .table-anim {
   /* border: 10px solid #2196f3; */
-<<<<<<< HEAD
   box-shadow: 0 0 0 0px black, 0 0 0 2px #2196f3;
   z-index: -1;
   margin: 2% auto;
   font-size: 1rem;
-=======
-  box-shadow: 0 0 0 0px black,0 0 0 10px #2196f3;
-  z-index: -1;
-  margin: 2% auto;
-  font-size: 2rem;
->>>>>>> 3b82b718bd7f0b71fc4f5957f05283d16f1bf258
   text-align: center;
   width: 50%;
   border-collapse: collapse;
@@ -560,7 +540,7 @@ nav .boxq a img {
   border: 2px solid black;
   z-index: 100;
 }
-<<<<<<< HEAD
+
 
 .code-2,
 .code-3,
@@ -864,7 +844,6 @@ nav .boxq a img {
   font-weight: bold;
   flex-direction: column;
   margin-top: 2%;
-<<<<<<< HEAD
   margin-left: 4%;
   margin-bottom: 2%;
   font-family: Arial, Helvetica, sans-serif;
