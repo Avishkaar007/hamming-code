@@ -51,6 +51,11 @@ function Nav() {
                 <img className="icon" src="https://image.pngaaa.com/134/5592134-middle.png"/><br/>
                 References</a>
         </div>
+        <div className="boxq">
+            <a className="internal_link" href="#team">
+                <img className="icon" src="./images/team.png"/><br/>
+                Team</a>
+        </div>
     </nav>
     </div>
   );

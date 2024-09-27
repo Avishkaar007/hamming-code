@@ -17,6 +17,7 @@ import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 
 
+
 function Aim() {
     return (<div className="box" id="aim">
         <div className="title">
@@ -548,7 +549,7 @@ function Result() {
             <div className="box" id="result">
                 <div className="heading">Result
                     <p className="desc text-1 text-2">
-                        If your application requires the ability to reliably detect and correct multi-bit errors, you may need to consider more advanced error-correcting codes, such as Reed-Solomon codes. Reed-Solomon codes are capable of correcting both single and multiple errors, making them suitable for applications where robust error correction is essential.
+                        This V-lab is useful for detecting error in the given bit stream using Hamming Code.
                     </p>
                 </div>
             </div>
@@ -556,19 +557,57 @@ function Result() {
 
             <div className="box">
                 <div className="title" id="references">
+                    <div className="heading">
+                        References
+                    </div>
                     <Resources />
-                </div>
-                <div className="desc">
-                    Additional Tools Used:
+
+                    <div className="">
+                        <p className="bold">
+                        Tools and Technologies used :
+                        </p>
+                    
                     <ol>
                         <li><a href="https://react.dev/" target="_blank">React </a></li>
                         <li><a href="https://vitejs.dev/" target="_blank">Vite </a></li>
                     </ol>
                 </div>
+                </div>
+                
+                
             </div>
+
         </>
     )
 }
+
+function Team() {
+
+    return (
+        <div className="box" id="team">
+
+            <div className="title">
+                <div className="heading">Team and Tools</div>
+                <h2 class="bold">
+                    Students
+                </h2>
+                <div className="student">
+                  <span className="lightBold">Avishkaar Pawar</span> <span className="p-4"> AD-1224 </span> <span className="lightBold"> B.Sc. (H) Computer Science </span> <span>(2023-24)</span>
+                </div>
+                
+                
+                <h2 class="bold ">Mentors</h2>
+                <div className="teacher">
+                    Dr. Sharanjit Kaur
+                </div>
+            </div>
+            
+
+        </div>
+
+    )
+}
+
 function Header() {
     const [isLargerThan600] = useMediaQuery(`(min-width: 600px)`);
 
@@ -583,7 +622,7 @@ function Header() {
                 <ul class="navigation">
                     <li><a href="https://www.vlab.andcollege.du.ac.in/index.html">Home</a></li>
                     <li><a href="https://www.vlab.andcollege.du.ac.in/csSc/comp.html">Labs</a></li>
-                    <li><a href="./team.html">Team</a></li>
+                    <li><a href="https://www.vlab.andcollege.du.ac.in/index.html">Team</a></li>
                     <li><a href="https://www.andcollege.du.ac.in/" target="_blank" rel="noopener noreferrer">College Website</a>
                     </li>
                 </ul>
@@ -640,6 +679,7 @@ function Container() {
             <Code />
             <Quiz />
             <Result />
+            <Team />
             <Footer />
             <div id="goTop" style={{ display: showButton ? 'block' : 'none' }} onClick={scrollToTop}>↑</div>
         </div>

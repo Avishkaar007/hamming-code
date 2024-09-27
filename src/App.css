@@ -259,6 +259,7 @@ header .navigation li a {
     cursor: pointer;
     background-color: #2196f3;
     color: white;
+
   }
 
   .cont {
@@ -357,6 +358,7 @@ nav .boxq a img {
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
 
+
 .exp .myContainer .box .title {
   line-height: 1.8;
   margin-top: 5%;
@@ -369,6 +371,7 @@ nav .boxq a img {
   text-decoration: none;
   justify-content: center;
   display: flex;
+
   font-weight: bold;
   flex-direction: column;
   margin-top: 2%;
@@ -436,6 +439,28 @@ nav .boxq a img {
   }
 }
 
+
+.language-cpp{
+  height: auto;
+  width: 80vw;
+}
+.obsv-image{
+  height: 400px;
+  width: 600px;
+}
+@media screen and (max-width:768px) {
+  .obsv-image{
+      height: 170px;
+      width: 250px;
+  }
+  .container > .box {
+      font-size: 0.7rem;
+  }
+  .language-cpp{
+      height: auto;
+      width: 70vw;
+  }
+}
 .cont {
   display: flex;
 }
@@ -466,7 +491,13 @@ nav .boxq a img {
   margin: 1.5%;
 }
 
-.det {
+
+.instruc, .detl, .detl-1,.obs {
+  text-align: center;
+  margin: 1.5%;
+}
+.det{
+
   text-align: center;
   font-size: 1.2rem;
   margin-top: -1%;
@@ -488,7 +519,6 @@ nav .boxq a img {
   background-color: #2196f3;
   color: white;
 }
-
 .cont {
   justify-content: center;
   align-items: center;
@@ -510,6 +540,7 @@ nav .boxq a img {
   border: 2px solid black;
   z-index: 100;
 }
+
 
 .code-2,
 .code-3,

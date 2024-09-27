@@ -108,12 +108,12 @@ const Home = props => {
 
 export function Resources() {
   return (
-    <Article>
-      <Heading as="h1" size="lg" fontWeight={1000} mt="1"  mb="1">
+    <Article >
+      <Heading as="h2" size="md" fontWeight={800} mt="2"  mb="1">
         Resources
       </Heading>
       <Text>
-        Heyming Simulator:{' A great thanks to the owner of this public software. '}
+        1. Heyming Simulator:{' A great thanks to the owner of this public software. '}
         <Link
           color="blue.500"
           target="_blank"
@@ -123,7 +123,7 @@ export function Resources() {
         </Link>
       </Text>
       <Text as="p">
-        Read more about Hamming Code:{' '}
+        2. Read more about Hamming Code:{' '}
         <Link
           color="blue.500"
           target="_blank"
@@ -133,7 +133,7 @@ export function Resources() {
         </Link>
       </Text>
       <Text as="p">
-        Read more about error-correcting code:{' '}
+        3. Read more about error-correcting code:{' '}
         <Link
           color="blue.500"
           target="_blank"
@@ -143,7 +143,7 @@ export function Resources() {
         </Link>
       </Text>
       <Text>
-        Learn hamming code from a video:{' '}
+        4. Learn hamming code from a video:{' '}
         <Link
           color="blue.500"
           target="_blank"
@@ -154,7 +154,7 @@ export function Resources() {
       </Text>
 
       <Text>
-        Pdf Explanation:{' '}
+        5. Pdf Explanation:{' '}
         <Link
           color="blue.500"
           target="_blank"
