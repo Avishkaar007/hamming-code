@@ -1,0 +1,21 @@
+hammingcode@0.0.0 D:\ANDC\College\VLAB\hamming-code
+Γö£ΓöÇΓöÇ @chakra-ui/react@2.8.1
+Γö£ΓöÇΓöÇ @types/react-dom@18.2.11
+Γö£ΓöÇΓöÇ @types/react@18.2.26
+Γö£ΓöÇΓöÇ @vitejs/plugin-react@4.1.0
+Γö£ΓöÇΓöÇ autoprefixer@10.4.19
+Γö£ΓöÇΓöÇ dotenv@16.3.1
+Γö£ΓöÇΓöÇ eslint-plugin-react-hooks@4.6.0
+Γö£ΓöÇΓöÇ eslint-plugin-react-refresh@0.4.3
+Γö£ΓöÇΓöÇ eslint-plugin-react@7.33.2
+Γö£ΓöÇΓöÇ eslint@8.51.0
+Γö£ΓöÇΓöÇ postcss@8.4.38
+Γö£ΓöÇΓöÇ react-dom@18.2.0
+Γö£ΓöÇΓöÇ react-full-screen@1.1.1
+Γö£ΓöÇΓöÇ react-icons@4.11.0
+Γö£ΓöÇΓöÇ react-router-dom@6.16.0
+Γö£ΓöÇΓöÇ react-syntax-highlighter@15.5.0
+Γö£ΓöÇΓöÇ react@18.2.0
+Γö£ΓöÇΓöÇ tailwindcss@3.4.3
+ΓööΓöÇΓöÇ vite@4.5.3
+

@@ -1,2 +1,2 @@
 Hamming code Simulation check at : 
-https://hamming-code-vlab.netlify.app/
+https://hamming-code.vercel.app/
